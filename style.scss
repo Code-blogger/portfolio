@@ -1,3 +1,5 @@
+$primary-color: rgb(64, 64, 231);
+$light-primary-color: rgb(176, 176, 236);
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +35,7 @@
             color: black;
             text-decoration: none;
             &:hover {
-                text-shadow: 1px 1px rgb(64, 64, 231);
+                text-shadow: 1px 1px $primary-color;
             }
         }
     }
@@ -72,7 +74,7 @@
     .button-home {
         top: 10%;
         padding: 10px 20px;
-        background-color: rgb(64, 64, 231);
+        background-color: $primary-color;
         margin: 5px;
         border-radius: 10%;
         a {
@@ -102,7 +104,7 @@
         .intro {
             padding-right: 5vw;
             h2 {
-                color: rgb(64, 64, 231);
+                color: $primary-color;
             }
             p {
                 margin-top: 10px;
@@ -110,5 +112,41 @@
                 font-family: sans-serif;
             }
         }
+    }
+}
+
+.skill {
+    display: grid;
+    height: 70vh;
+    grid-template-columns: 20% auto;
+    flex-wrap: nowrap;
+    li {
+        list-style: none;
+    }
+    .skill-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+        height: 100%;
+        align-content: space-around;
+        .skill-item {
+            color: black;
+            text-align: center;
+            font-size: 1.5em;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: $light-primary-color;
+            &:hover {
+                color: $light-primary-color;
+                background-color: white;
+            }
+        }
+    }
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 70%;
+        color: $primary-color;
     }
 }

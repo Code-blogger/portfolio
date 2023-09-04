@@ -84,6 +84,9 @@
 .button .button-home:hover {
   box-shadow: 2px 2px rgb(15, 1, 1);
 }
+.button .button-home:active {
+  color: black;
+}
 
 .aboutme {
   display: flex;
@@ -108,4 +111,40 @@
   margin-top: 10px;
   text-align: justify;
   font-family: sans-serif;
+}
+
+.skill {
+  display: grid;
+  height: 70vh;
+  grid-template-columns: 20% auto;
+  flex-wrap: nowrap;
+}
+.skill li {
+  list-style: none;
+}
+.skill .skill-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  height: 100%;
+  align-content: space-around;
+}
+.skill .skill-container .skill-item {
+  color: black;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgb(176, 176, 236);
+}
+.skill .skill-container .skill-item:hover {
+  color: rgb(176, 176, 236);
+  background-color: white;
+}
+.skill h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 70%;
+  color: rgb(64, 64, 231);
 }/*# sourceMappingURL=style.css.map */
