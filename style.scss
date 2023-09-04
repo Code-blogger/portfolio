@@ -1,5 +1,6 @@
 $primary-color: rgb(64, 64, 231);
-$light-primary-color: rgb(176, 176, 236);
+$light-primary-color: rgb(171, 167, 167),
+;
 * {
     margin: 0;
     padding: 0;
@@ -118,6 +119,7 @@ $light-primary-color: rgb(176, 176, 236);
 .skill {
     display: grid;
     height: 70vh;
+    background-image: linear-gradient( white, $light-primary-color, $light-primary-color, white);
     grid-template-columns: 20% auto;
     flex-wrap: nowrap;
     li {
@@ -130,15 +132,15 @@ $light-primary-color: rgb(176, 176, 236);
         height: 100%;
         align-content: space-around;
         .skill-item {
-            color: black;
+            color: white;
             text-align: center;
-            font-size: 1.5em;
-            margin: 20px;
+            font-size: 1em;
+            margin: 20px 70px;
             padding: 20px;
             border-radius: 20px;
-            background-color: $light-primary-color;
+            background-color: $primary-color;
             &:hover {
-                color: $light-primary-color;
+                color: $primary-color;
                 background-color: white;
             }
         }
@@ -146,7 +148,66 @@ $light-primary-color: rgb(176, 176, 236);
     h2 {
         font-size: 2rem;
         text-align: center;
-        margin-top: 70%;
-        color: $primary-color;
+        margin-top: 75%;
+        color: black;
+    }
+}
+
+.project {
+    height: auto;
+    background-color: $primary-color;
+    border-radius: 50px 50px 0px 0px;
+    margin: 0px 2vw;
+    h2 {
+        margin-top: 30px;
+        font-size: 2rem;
+        text-align: center;
+        color: black;
+    }
+    .work {
+        display: grid;
+        grid-template-columns: auto auto 20%;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        padding: 20px;
+        row-gap: 40px;
+        column-gap: 70px;
+        .work-item {
+            margin-left: 20px;
+            background-image: linear-gradient($light-primary-color, white, $light-primary-color);
+            padding: 30px;
+            border-radius: 50px 50px 0px 0px;
+            .project-heading {
+                font-size: 1.5em;
+                text-align: center;
+                margin: 20px 0px;
+            }
+            li {
+                margin: 10px;
+                text-align: justify;
+                &::first-letter {
+                    text-indent: 20px;
+                }
+            }
+        }
+        button {
+            background-color: $primary-color;
+            margin: 5px;
+            border-radius: 10%;
+            a {
+                text-decoration: none;
+                color: white;
+            }
+            &:hover {
+                box-shadow: 2px 2px rgb(15, 1, 1);
+            }
+            &:active {
+                color: black;
+            }
+        }
+        .btn {
+            margin: 200px 40px;
+            padding: 20px;
+        }
     }
 }
