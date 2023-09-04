@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#home {
+  background-image: url(img/Home.png);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 10vh;
+  margin-right: 20vh;
+  align-items: center;
+  list-style-type: none;
+  position: sticky;
+  text-decoration: none;
+  top: 0;
+}
+.nav-bar .nav-items {
+  font-size: medium;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0 5vh;
+}
+.nav-bar .nav-items a {
+  color: black;
+  text-decoration: none;
+}
+.nav-bar .nav-items a:hover {
+  text-shadow: 1px 1px rgb(64, 64, 231);
+}
+
+.headline {
+  position: relative;
+  font-size: 3rem;
+  top: 30%;
+  margin-left: 20%;
+}
+
+.tagline {
+  position: absolute;
+  top: 48%;
+  left: 20%;
+}
+.tagline:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: black;
+  border-radius: 50%;
+  width: 10vw;
+  bottom: -2vh;
+  left: 0px;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  position: absolute;
+  top: 55%;
+  left: 20%;
+}
+.button .button-home {
+  top: 10%;
+  padding: 10px 20px;
+  background-color: rgb(64, 64, 231);
+  margin: 5px;
+  border-radius: 10%;
+}
+.button .button-home a {
+  text-decoration: none;
+  color: white;
+}
+.button .button-home:hover {
+  box-shadow: 2px 2px rgb(15, 1, 1);
+}
+.button .button-home:active {
+  color: black;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: row;
+}
+.aboutme .aboutme-item {
+  width: 50%;
+  align-self: center;
+}
+.aboutme .aboutme-item img {
+  margin-left: 15vw;
+  width: auto;
+  height: 50vh;
+}
+.aboutme .aboutme-item .intro {
+  padding-right: 5vw;
+}
+.aboutme .aboutme-item .intro h2 {
+  color: rgb(64, 64, 231);
+}
+.aboutme .aboutme-item .intro p {
+  margin-top: 10px;
+  text-align: justify;
+  font-family: sans-serif;
+}
+
+.skill {
+  display: grid;
+  height: 70vh;
+  background-image: linear-gradient(white, rgb(171, 167, 167), rgb(171, 167, 167), white);
+  grid-template-columns: 20% auto;
+  flex-wrap: nowrap;
+}
+.skill li {
+  list-style: none;
+}
+.skill .skill-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  height: 100%;
+  align-content: space-around;
+}
+.skill .skill-container .skill-item {
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  margin: 20px 70px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgb(64, 64, 231);
+}
+.skill .skill-container .skill-item:hover {
+  color: rgb(64, 64, 231);
+  background-color: white;
+}
+.skill h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 75%;
+  color: black;
+}
+
+.project {
+  height: auto;
+  background-color: rgb(64, 64, 231);
+  border-radius: 50px 50px 0px 0px;
+  margin: 0px 2vw;
+}
+.project h2 {
+  margin-top: 30px;
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+}
+.project .work {
+  display: grid;
+  grid-template-columns: auto auto 20%;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  padding: 20px;
+  row-gap: 40px;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+}
+.project .work .work-item {
+  margin-left: 20px;
+  background-image: linear-gradient(rgb(171, 167, 167), white, rgb(171, 167, 167));
+  padding: 30px;
+  border-radius: 50px 50px 0px 0px;
+}
+.project .work .work-item .project-heading {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 20px 0px;
+}
+.project .work .work-item li {
+  margin: 10px;
+  text-align: justify;
+}
+.project .work .work-item li::first-letter {
+  text-indent: 20px;
+}
+.project .work button {
+  background-color: rgb(64, 64, 231);
+  margin: 5px;
+  border-radius: 10%;
+}
+.project .work button a {
+  text-decoration: none;
+  color: white;
+}
+.project .work button:hover {
+  box-shadow: 2px 2px rgb(15, 1, 1);
+}
+.project .work button:active {
+  color: black;
+}
+.project .work .btn {
+  margin: 200px 40px;
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */
