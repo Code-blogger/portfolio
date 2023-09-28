@@ -10,6 +10,7 @@ $very-primary-color: rgb(219, 216, 216);
 
 #home {
     background-image: url(assests/img/Home.png);
+    background-size: contain;
     width: 100%;
     height: 100vh;
     background-position: center;
@@ -83,7 +84,7 @@ $very-primary-color: rgb(219, 216, 216);
         padding: 10px 20px;
         background-color: $primary-color;
         margin: 5px;
-        border-radius: 10%;
+        border-radius: 10px;
         a {
             text-decoration: none;
             color: white;
@@ -164,8 +165,9 @@ $very-primary-color: rgb(219, 216, 216);
     background-color: $primary-color;
     border-radius: 50px 50px 0px 0px;
     margin: 0px 2vw;
+    padding-top: 1px;
     h2 {
-        margin-top: 30px;
+        margin-top: 10px;
         font-size: 2rem;
         text-align: center;
         color: black;
@@ -180,7 +182,7 @@ $very-primary-color: rgb(219, 216, 216);
         column-gap: 70px;
         .work-item {
             margin-left: 20px;
-            background-image: linear-gradient($light-primary-color, white, $light-primary-color);
+            background-image: linear-gradient($light-primary-color, white, $very-primary-color);
             padding: 30px;
             border-radius: 50px 50px 0px 0px;
             .project-heading {
@@ -197,15 +199,16 @@ $very-primary-color: rgb(219, 216, 216);
             }
         }
         button {
-            background-color: $primary-color;
             margin: 5px;
-            border-radius: 10%;
+            border-radius: 20px;
+            padding: 20px;
             a {
                 text-decoration: none;
-                color: white;
+                color: $primary-color;
             }
             &:hover {
                 box-shadow: 2px 2px rgb(15, 1, 1);
+                background-image: linear-gradient(to bottom, $very-primary-color, $light-primary-color);
             }
             &:active {
                 color: black;
@@ -213,7 +216,6 @@ $very-primary-color: rgb(219, 216, 216);
         }
         .btn {
             margin: 200px 40px;
-            padding: 20px;
         }
     }
 }
