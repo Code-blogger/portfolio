@@ -1,6 +1,6 @@
 $primary-color: rgb(64, 64, 231);
-$light-primary-color: rgb(171, 167, 167),
-;
+$light-primary-color: rgb(171, 167, 167);
+$very-primary-color: rgb(219, 216, 216);
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@ $light-primary-color: rgb(171, 167, 167),
 }
 
 #home {
-    background-image: url(img/Home.png);
+    background-image: url(assests/img/Home.png);
     width: 100%;
     height: 100vh;
     background-position: center;
@@ -19,7 +19,7 @@ $light-primary-color: rgb(171, 167, 167),
 .nav-bar {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
     height: 10vh;
     margin-right: 20vh;
     align-items: center;
@@ -39,6 +39,10 @@ $light-primary-color: rgb(171, 167, 167),
                 text-shadow: 1px 1px $primary-color;
             }
         }
+        img {
+            width: 7vw;
+            height: auto;
+        }
     }
 }
 
@@ -51,6 +55,7 @@ $light-primary-color: rgb(171, 167, 167),
 
 .tagline {
     position: absolute;
+    color: $primary-color;
     top: 48%;
     left: 20%;
     &:after {
@@ -209,5 +214,44 @@ $light-primary-color: rgb(171, 167, 167),
             margin: 200px 40px;
             padding: 20px;
         }
+    }
+}
+
+.footer {
+    .footer-main {
+        background-color: $very-primary-color;
+        padding: 30px 0px;
+        display: flex;
+        flex-direction: row;
+        .footer-intro {
+            text-align: left;
+            margin-left: 30px;
+            font-weight: ;
+        }
+        .footer-contact {
+            text-align: left;
+            margin-left: 55vw;
+            ul {
+                list-style: none;
+                li {
+                    margin: 10px 0px;
+                    a {
+                        text-decoration: none;
+                    }
+                }
+                .fa {
+                    color: $primary-color;
+                }
+                .fa-lg {
+                    margin: 14px 14px 0px 0px;
+                }
+            }
+        }
+    }
+    .footer-line {
+        text-align: center;
+        background-color: $primary-color;
+        color: $light-primary-color;
+        padding: 10px;
     }
 }
